@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>system</title>
+
+     <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=53oVIOgmSIejwV7EfphPgTynOZbIiVYu"></script>
+
+</head>
+<body>
+      <div id="plane" style="width: 1200px; height: 600px;"> shuai </div>
+
+            <script>
+
+var map = new BMap.Map("plane",{mapType: BMAP_HYBRID_MAP}); 
+var point = new BMap.Point(117.0264,36.0516);map.setCurrentCity("中国�");
+map.centerAndZoom(point,6);        
+map.addControl(new BMap.NavigationControl());
+map.addControl(new BMap.ScaleControl());    
+map.addControl(new BMap.OverviewMapControl()); 
+map.enableScrollWheelZoom(true);
+
+</script>
+</body>
+</html>
